@@ -1,5 +1,5 @@
 # windows-python-package
 
-```python
+```cmd
 pip download [package]
 ```
