@@ -17,8 +17,15 @@ cd [PyInstaller-3.5.tar.gz existed path]
 pip install --no-index --no-build-isolation PyInstaller-3.5.tar.gz
 ```
 
+personal SOP
+```
+pip install --no-index --find-links . -r requirements.txt
+pip install --no-index --no-build-isolation PyInstaller-3.5.tar.gz # if fail in last row
+```
+
 Update python library offline
 https://stackoverflow.com/questions/57689476/update-python-library-offline
 ```cmd
 pip install --no-index --user --find-links /tmp/pip/ --upgrade Werkzeug==0.15.5
 ```
+
