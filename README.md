@@ -37,3 +37,8 @@ https://stackoverflow.com/questions/57689476/update-python-library-offline
 pip install --no-index --user --find-links /tmp/pip/ --upgrade Werkzeug==0.15.5
 ```
 
+## install-python-modules-pip-behind-proxy
+1. Fiddler: "Rules" => click "Automatically Authenticate"
+2. type 127.0.0.1:8888 on chorme (just test)
+3. request.get("www.google.com", proxies=...) (just test)
+4. pip install --proxy "127.0.0.1:8888" --trusted-host pypi.org --trusted-host pypi.python.org --trusted-host files.pythonhosted.org pip [package]
